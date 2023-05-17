@@ -11,7 +11,7 @@ const Login = () => {
                     Please Login!
                 </p>
             </div>
-            <div className="font-bold">
+            <div className="font-bold mb-10">
                 <div className="hero max-w-6xl mx-auto">
                     <div className="hero-content">
                         <div className="text-center lg:text-left">

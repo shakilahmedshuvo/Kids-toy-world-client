@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
-        <div className="bg-emerald-700 text-white">
+        <div className="bg-sky-500 text-white">
             <div className="navbar pt-5 max-w-6xl mx-auto">
                 <div className="navbar-start">
                     <a className="btn btn-ghost normal-case text-xl font-bold">
