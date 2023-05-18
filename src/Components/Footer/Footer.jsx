@@ -8,8 +8,8 @@ const Footer = () => {
                 <div className="items-center grid-flow-col">
                     <div className="flex items-center pt-10 px-10">
                         <img
-                            className="w-[5%] rounded-full mr-3"
-                            src="https://img.freepik.com/premium-vector/cute-wooden-toy-vector-illustration-logo-pastel-colors_499212-563.jpg?w=740" alt="" />
+                            className="w-[5%] rounded-xl mr-3"
+                            src="https://img.freepik.com/free-vector/kids-zone-fun-play-banner-design_1017-33753.jpg?w=826&t=st=1684432416~exp=1684433016~hmac=a1b3560be2db226556845656f23fe53a4d397dac4f010a8deb4f96e28f304643" alt="" />
                         <p className="text-2xl">
                             Kids Toy World
                         </p>

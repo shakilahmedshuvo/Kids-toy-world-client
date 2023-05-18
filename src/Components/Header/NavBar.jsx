@@ -65,6 +65,9 @@ const NavBar = () => {
         <div className="bg-sky-500 font-bold">
             <div className="navbar mx-auto  max-w-6xl text-white">
                 <div className="navbar-start">
+                    <img
+                        className="w-[12%] rounded-xl mr-3"
+                        src="https://img.freepik.com/free-vector/kids-zone-fun-play-banner-design_1017-33753.jpg?w=826&t=st=1684432416~exp=1684433016~hmac=a1b3560be2db226556845656f23fe53a4d397dac4f010a8deb4f96e28f304643" alt="" />
                     <a className="btn btn-ghost normal-case text-xl font-bold">
                         Kids Toy Client
                     </a>
