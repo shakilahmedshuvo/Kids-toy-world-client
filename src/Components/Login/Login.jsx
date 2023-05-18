@@ -30,6 +30,7 @@ const Login = () => {
 
         })
             .catch(error => {
+                toast.error('Wrong Password')
                 console.log(error);
             })
         // reset the from

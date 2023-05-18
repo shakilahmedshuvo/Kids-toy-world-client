@@ -50,7 +50,7 @@ const NavBar = () => {
                             </Link>
                         </li>
                         {/* tooltip show and the profile picture */}
-                        <div className="tooltip tooltip-warning tooltip-bottom" data-tip={user.email}>
+                        <div className="tooltip tooltip-warning tooltip-bottom" data-tip={user.displayName}>
                             <img
                                 className="w-10 h-10 rounded-full"
                                 src=
