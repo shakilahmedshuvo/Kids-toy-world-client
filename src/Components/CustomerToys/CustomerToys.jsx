@@ -98,8 +98,9 @@ const CustomerToys = () => {
                         </div>
                     </div>
                     {/* btn */}
-                    <div>
-
+                    <div className="grid grid-cols-2 gap-10 mt-2">
+                        <button className="btn rounded-full text-black font-bold bg-warning border-0 px-7">Add to Cart</button>
+                        <button className="btn rounded-full text-black font-bold bg-warning border-0 px-7">Buy it Now</button>
                     </div>
                 </div>
             </div>
