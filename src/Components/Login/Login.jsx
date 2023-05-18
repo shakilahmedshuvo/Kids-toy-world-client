@@ -4,7 +4,7 @@ const Login = () => {
     return (
         <>
             <div className="mt-10">
-                <h2 className="text-4xl font-bold text-center">
+                <h2 className="text-4xl font-bold text-center text-sky-800">
                     Login
                 </h2>
                 <p className="text-2xl font-bold text-center mt-2">
@@ -22,19 +22,29 @@ const Login = () => {
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text">
-                                            Email
+                                            Your Email
                                         </span>
                                     </label>
-                                    <input type="text" placeholder="email" className="input input-bordered" />
+                                    <input type="text" placeholder="Email" className="input input-bordered" />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text">
-                                            Password
+                                            Your Password
                                         </span>
                                     </label>
-                                    <input type="password" placeholder="password" className="input input-bordered" />
-                                    <label className="label">
+                                    <input type="password" placeholder="Password" className="input input-bordered" />
+                                    {/* sign in with google */}
+                                    <div className="m-1 mb-2">
+                                        <h5 className="text-center">
+                                            Login With Google
+                                        </h5>
+                                        <img
+                                        className="w-[8%] mx-auto"
+                                        src="https://cdn-icons-png.flaticon.com/512/270/270799.png?w=740&t=st=1684395683~exp=1684396283~hmac=e50233f45b29630b8d29f77299b68bcd80736882d1ce982695289f2785195413" alt="" />
+                                    </div>
+                                        <hr className="font-bold" />
+                                    <label className="label mt-2">
                                         <small className="text-neutral-700">
                                             Don't Have an Account? New to Kids Toy World?
                                             <br />
