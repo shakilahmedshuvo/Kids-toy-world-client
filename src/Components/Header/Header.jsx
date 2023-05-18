@@ -8,6 +8,7 @@ const Header = () => {
             <h2 className="text-5xl font-extrabold text-center p-5 text-sky-500">
                 kIDS TOY WORLD
             </h2>
+            <hr className="border-b border-gray-500 border-1 max-w-5xl mx-auto" />
             <p className="text-center font-bold p-2">
                 Safe Toys For Children, High Durable Toys, Recyclable Materials, Safe and Non-Toxic Toys
             </p>

@@ -24,6 +24,10 @@ const Footer = () => {
                                 who wrote the rules for this company. That's right, the
                                 <br />
                                 creator of the best toy company on planet earth.
+                                <br />
+                                <small>
+                                    Thank You. . .
+                                </small>
                             </p>
                         </div>
                         <div className="mt-5">
@@ -91,8 +95,11 @@ const Footer = () => {
                     </div>
                 </footer>
                 <footer className="footer px-10 py-4">
-
-
+                    <small className="text-zinc-700">
+                        @ ALL RIGHTS RESERVED BY KIDS TOYS WORLD SAS.
+                        <br />
+                        © 2023 Trademarks and brands are the property of their respective owners.
+                    </small>
                 </footer>
             </div>
         </div>
