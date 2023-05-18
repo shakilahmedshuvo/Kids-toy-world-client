@@ -1,4 +1,5 @@
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaHeadset, FaRegClock } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 
 const Footer = () => {
     return (
@@ -63,20 +64,29 @@ const Footer = () => {
                         <h2 className="footer-title">
                             Content Information
                         </h2>
-                        <a className="link link-hover flex">
+                        <a className="link link-hover flex mt-2">
                             <FaHome className="text-2xl"></FaHome>
                             <p className="items-center ms-1">
-                                88 Manor Station St. Marcus Hook, PA 19061
+                                88 MANOR STATION ST.DHAKA BD
                             </p>
                         </a>
-                        <a className="link link-hover">
-                            Terms of use
+                        <a className="link link-hover flex mt-2">
+                            <FaHeadset className="text-2xl"></FaHeadset>
+                            <p className="items-center ms-1">
+                                PHONE: +0123456789
+                            </p>
                         </a>
-                        <a className="link link-hover">
-                            Privacy policy
+                        <a className="link link-hover flex mt-2">
+                            <FiMail className="text-2xl"></FiMail>
+                            <p className="items-center ms-1">
+                                Email: KIDS.TOY.WORLD@GMAIL.COM
+                            </p>
                         </a>
-                        <a className="link link-hover">
-                            Legal
+                        <a className="link link-hover flex mt-2">
+                            <FaRegClock className="text-2xl"></FaRegClock>
+                            <p className="items-center ms-1">
+                                9.00AM - 6.00PM
+                            </p>
                         </a>
                     </div>
                 </footer>
