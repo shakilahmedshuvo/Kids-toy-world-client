@@ -1,7 +1,46 @@
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Providers/AuthProvider";
+import { toast } from "react-hot-toast";
 
 
 const Registration = () => {
+    const { createUser } = useContext(AuthContext);
+    const [error, setError] = useState('')
+
+    const handleRegister = (event) => {
+        // stop reloading
+        event.preventDefault();
+        // get the info 
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        const name = form.name.value;
+        const photo = form.photo.value;
+        // console.log(email, password, name, photo);
+
+        if (password.length < 6) {
+            setError('Enter a Strong Password or Enter More Than 8 Character Password')
+            toast.error('The password is less than 6 characters')
+        }
+        else {
+            toast.success('Successfully Register')
+            setError('')
+        }
+
+        createUser(email, password)
+            .then(result => {
+                const loggedUser = result.user;
+                // console.log(loggedUser);
+            })
+            .catch(error => {
+                console.log(error);
+            })
+        // reset the from 
+        form.reset();
+    }
+
+
     return (
         <>
             <div className="mt-10">
@@ -28,7 +67,7 @@ const Registration = () => {
                                 </small>
                                 <hr className="border-b border-solid border-4" />
                                 {/* Registration form start */}
-                                <form>
+                                <form onSubmit={handleRegister}>
                                     <div className="form-control">
                                         <label className="label">
                                             <span className="label-text">
