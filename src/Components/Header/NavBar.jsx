@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
+import { FcSearch } from "react-icons/fc";
 
 const NavBar = () => {
 
@@ -84,10 +85,7 @@ const NavBar = () => {
                         {navBarItems}
                     </ul>
                 </div>
-                <div className="navbar-end font-bold">
-                    <li>
-                        
-                    </li>
+                <div className="navbar-end font-bold">  
                     {
                         user ?
                             <>
