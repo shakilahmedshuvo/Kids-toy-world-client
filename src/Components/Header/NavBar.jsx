@@ -85,7 +85,7 @@ const NavBar = () => {
                         {navBarItems}
                     </ul>
                 </div>
-                <div className="navbar-end font-bold">  
+                <div className="navbar-end font-bold">
                     {
                         user ?
                             <>
