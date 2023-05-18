@@ -1,42 +1,94 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Providers/AuthProvider";
 
 const NavBar = () => {
+
+    const { user } = useContext(AuthContext);
+
+    const navBarItems =
+        <>
+            <li>
+                <Link
+                    to="/">
+                    Home
+                </Link>
+            </li>
+            <li>
+                <Link to="/blog">
+                    All Toys
+                </Link>
+            </li>
+            <li>
+                <Link to="/blog">
+                    Blog
+                </Link>
+            </li>
+            {
+                user ?
+                    <>
+                        <li>
+                            <Link to="/blog">
+                                My Toys
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/blog">
+                                Add A Toy
+                            </Link>
+                        </li>
+                        <p>
+                            <img
+                                className="w-10 h-10 rounded"
+                                src={user.photoURL} alt="" />
+                        </p>
+                    </>
+                    :
+                    <></>
+            }
+        </>
     return (
-        <div className="bg-sky-500 text-white">
-            <div className="navbar pt-5 max-w-6xl mx-auto">
+        <div className="bg-sky-500 font-bold">
+            <div className="navbar mx-auto  max-w-6xl text-white">
                 <div className="navbar-start">
                     <a className="btn btn-ghost normal-case text-xl font-bold">
                         Kids Toy Client
                     </a>
+                    <div className="dropdown">
+                        <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-black rounded-box w-52">
+                            {navBarItems}
+                        </ul>
+                    </div>
+                    <Link to="/" className="btn btn-ghost normal-case text-xl">
+                        <img src="" alt="" />
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 font-bold text-white">
-                        <li>
-                            <Link to='/'>
-                                Home
-                            </Link>
-                        </li>
-                        <li tabIndex={0}>
-                            <a>
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <Link to="/blog">
-                                Blog
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/login">
-                                Login
-                            </Link>
-                        </li>
+                    <ul className="menu menu-horizontal px-1">
+                        {navBarItems}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">
-                        Get started
-                    </a>
+                <div className="navbar-end font-bold">
+                    {
+                        user ?
+                            <>
+                                <button className="btn btn-info font-bold bg-sky-500 text-white">
+                                    Logout
+                                </button>
+                            </>
+                            :
+                            <>
+                                <button className="btn btn-info font-bold bg-sky-500 text-white">
+                                    <Link
+                                        to="/login">
+                                        Login
+                                    </Link>
+                                </button>
+                            </>
+                    }
                 </div>
             </div>
         </div>
