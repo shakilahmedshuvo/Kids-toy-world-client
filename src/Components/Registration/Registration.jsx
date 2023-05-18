@@ -20,6 +20,13 @@ const Registration = () => {
                         </div>
                         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                             <div className="card-body">
+                                <h1 className="text-center text-3xl p-5 text-sky-500">
+                                    Kids Toy World
+                                </h1>
+                                <small className="font-bold text-center text-slate-600">
+                                    DISCOVER SOMETHING MORE EVERY DAY
+                                </small>
+                                <hr className="border-b border-solid border-4" />
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text">

@@ -4,7 +4,18 @@ import { AuthContext } from "../Providers/AuthProvider";
 
 const NavBar = () => {
 
-    const { user } = useContext(AuthContext);
+    const { user, userLogOut } = useContext(AuthContext);
+
+    // handle log out function
+    const logoutHandle = () => {
+        userLogOut()
+            .then(result => {
+
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
 
     const navBarItems =
         <>
@@ -37,11 +48,13 @@ const NavBar = () => {
                                 Add A Toy
                             </Link>
                         </li>
-                        <p>
-                            <img
-                                className="w-10 h-10 rounded"
-                                src={user.photoURL} alt="" />
-                        </p>
+                        <img
+                            className="w-10 h-10 rounded"
+                            src=
+                            {
+                                user?.photoURL
+                            }
+                            alt="" />
                     </>
                     :
                     <></>
@@ -72,16 +85,22 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end font-bold">
+                    <li>
+                        
+                    </li>
                     {
                         user ?
                             <>
-                                <button className="btn btn-info font-bold bg-sky-500 text-white">
+                                <button
+                                    onClick={userLogOut}
+                                    className="btn btn-info font-bold bg-sky-500 text-white">
                                     Logout
                                 </button>
                             </>
                             :
                             <>
-                                <button className="btn btn-info font-bold bg-sky-500 text-white">
+                                <button
+                                    className="btn btn-info font-bold bg-sky-500 text-white">
                                     <Link
                                         to="/login">
                                         Login
