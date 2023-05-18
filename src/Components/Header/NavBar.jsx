@@ -49,13 +49,16 @@ const NavBar = () => {
                                 Add A Toy
                             </Link>
                         </li>
-                        <img
-                            className="w-10 h-10 rounded-full"
-                            src=
-                            {
-                                user?.photoURL
-                            }
-                            alt="" />
+                        {/* tooltip show and the profile picture */}
+                        <div className="tooltip tooltip-warning tooltip-bottom" data-tip={user.email}>
+                            <img
+                                className="w-10 h-10 rounded-full"
+                                src=
+                                {
+                                    user?.photoURL
+                                }
+                                alt="" />
+                        </div>
                     </>
                     :
                     <></>
