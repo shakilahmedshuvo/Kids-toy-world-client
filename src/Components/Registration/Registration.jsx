@@ -27,50 +27,57 @@ const Registration = () => {
                                     DISCOVER SOMETHING MORE EVERY DAY
                                 </small>
                                 <hr className="border-b border-solid border-4" />
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">
-                                            Your Name
-                                        </span>
-                                    </label>
-                                    <input type="text" placeholder="Name" className="input input-bordered" />
-                                </div>
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">
-                                            Your Email
-                                        </span>
-                                    </label>
-                                    <input type="email" placeholder="Email" className="input input-bordered" />
-                                </div>
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">
-                                            Your Email
-                                        </span>
-                                    </label>
-                                    <input type="email" placeholder="Email" className="input input-bordered" />
-                                </div>
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">
-                                            Your Photo URL
-                                        </span>
-                                    </label>
-                                    <input type="text" placeholder="Photo URL" className="input input-bordered" />
-                                    <label className="label">
-                                        <small className="text-neutral-700">
-                                            Already Have an Account?
-                                            <br />
-                                            Please<Link className="font-extrabold text-sky-500" to='/login'> Login</Link>
-                                        </small>
-                                    </label>
-                                </div>
-                                <div className="form-control mt-6">
-                                    <button className="btn bg-sky-700">
-                                        Login
-                                    </button>
-                                </div>
+                                {/* Registration form start */}
+                                <form>
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="label-text">
+                                                Your Name
+                                            </span>
+                                        </label>
+                                        <input name="name" type="text" placeholder="Name" className="input input-bordered" required />
+                                    </div>
+
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="label-text">
+                                                Your Email
+                                            </span>
+                                        </label>
+                                        <input name="email" type="email" placeholder="Email" className="input input-bordered" required />
+                                    </div>
+
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="label-text">
+                                                Your Password
+                                            </span>
+                                        </label>
+                                        <input name="password" type="password" placeholder="Password" className="input input-bordered" required />
+                                    </div>
+
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="label-text">
+                                                Your Photo URL
+                                            </span>
+                                        </label>
+                                        <input name="photo" type="text" placeholder="Photo URL" className="input input-bordered" required />
+
+                                        <label className="label">
+                                            <small className="text-neutral-700">
+                                                Already Have an Account?
+                                                <br />
+                                                Please<Link className="font-extrabold text-sky-500" to='/login'> Login</Link>
+                                            </small>
+                                        </label>
+                                    </div>
+                                    <div className="form-control mt-6">
+                                        <button className="btn bg-sky-700" type="submit">
+                                            Registration
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

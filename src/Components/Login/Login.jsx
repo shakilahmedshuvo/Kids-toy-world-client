@@ -77,6 +77,7 @@ const Login = () => {
                                     DISCOVER SOMETHING MORE EVERY DAY
                                 </small>
                                 <hr className="border-b border-solid border-4" />
+                                {/* login form start */}
                                 <form onSubmit={handleLogin}>
                                     <div className="form-control">
                                         <label className="label">
