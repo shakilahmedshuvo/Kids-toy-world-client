@@ -13,6 +13,8 @@ import Registration from './Components/Registration/Registration';
 import AuthProvider from './Components/Providers/AuthProvider';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import AddToy from './Components/AddToy/AddToy';
+import AllToys from './Components/AllToys/AllToys';
+import MyToys from './Components/MyToys/MyToys';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +41,15 @@ const router = createBrowserRouter([
       {
         path: '/addToy',
         element: <AddToy></AddToy>
+      },
+      {
+        path: '/allToys',
+        element: <AllToys></AllToys>,
+        loader: () => fetch('http://localhost:5000/allToys')
+      },
+      {
+        path: '/myToys',
+        element: <MyToys></MyToys>
       }
     ]
   },
