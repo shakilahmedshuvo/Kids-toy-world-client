@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
+import toast, { Toaster } from 'react-hot-toast';
 
 const AddToy = () => {
     const { user } = useContext(AuthContext);
@@ -21,9 +22,36 @@ const AddToy = () => {
         const price = form.price.value;
         const description = form.description.value;
 
-        const allInfo = { picture, name, sellerName, email, category, price, rating, quantity, description };
+        const allData = {
+            picture,
+            name,
+            sellerName,
+            email,
+            category,
+            price,
+            rating,
+            quantity,
+            description
+        };
 
-        console.log(allInfo);
+        // console.log(allInfo);
+
+        // data post to the backend server( mongodb )
+        fetch('http://localhost:5000/addToy', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(allData)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    toast.success('Your Toy Added Successfully')
+                    form.reset();
+                }
+            })
     }
     return (
         <div className="max-w-5xl mx-auto font-bold mb-10">
@@ -80,7 +108,7 @@ const AddToy = () => {
                                 Seller Email
                             </span>
                         </label>
-                        <input type="text" className="input input-bordered" />
+                        <input type="text" defaultValue={user?.email} className="input input-bordered" />
                     </div>
 
                     <div className="form-control">
