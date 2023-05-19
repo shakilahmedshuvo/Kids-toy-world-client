@@ -6,7 +6,7 @@ const AllToys = () => {
     console.log(data);
 
     return (
-        <div className="overflow-x-auto max-w-6xl mx-auto">
+        <div className="overflow-x-auto max-w-6xl mx-auto mb-14">
             <h2 className="font-bold text-5xl text-center m-5 pb-4 text-sky-500">
                 Our All Toys
             </h2>
@@ -32,12 +32,12 @@ const AllToys = () => {
                         <th className="text-center">
                             Available Quantities
                         </th>
-                        <th>
+                        <th className="text-center">
                             More Info
                         </th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className="font-bold">
                     {/* table body map section start */}
                     {
                         data.map(data => <AllToysMap
