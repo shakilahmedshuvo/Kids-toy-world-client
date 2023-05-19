@@ -37,7 +37,8 @@ const Blog = () => {
             <p className="text-1xl p-5 text-zinc-700 font-extrabold">
                 Answer: MongoDB's aggregate is a powerful operation for data processing and analysis. It uses a pipeline of stages to perform various operations like grouping, filtering, sorting, and projecting on the input documents. The result is a transformed and aggregated dataset based on the specified operations.
             </p>
-            <p className="text-center">
+            <hr className="border-b border-solid border-4 m-5" />
+            <p className="text-center text-warning">
                 The End
             </p>
         </div>

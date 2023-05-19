@@ -3,7 +3,7 @@ const Banner = () => {
     return (
         <div>
             <h2 className="text-5xl font-extrabold text-center p-5 text-sky-500">
-                kIDS TOY WORLD
+                KIDS TOY WORLD
             </h2>
             <hr className="border-b border-gray-500 border-1 max-w-5xl mx-auto" />
             <p className="text-center font-bold p-2">
