@@ -58,6 +58,9 @@ const AddToy = () => {
             <h2 className="text-4xl font-bold text-center text-sky-500 my-5">
                 Add To Your Toy
             </h2>
+            <p className="text-center m-10 font-bold text-slate-500">
+                Add a Unique Toy
+            </p>
             {/* form section start */}
             <form onSubmit={handleBookService}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -65,37 +68,27 @@ const AddToy = () => {
                         <label className="label">
                             <span
                                 className="label-text">
-                                Toy Photo
-                            </span>
-                        </label>
-                        <input type="text" name="picture" className="input input-bordered" />
-                    </div>
-
-                    <div className="form-control">
-                        <label className="label">
-                            <span
-                                className="label-text">
-                                Toy Name
+                                *Toy Name
                             </span>
                         </label>
                         <input type="text" name="name" className="input input-bordered" />
                     </div>
 
-                    <div className="form-control">
-                        <label className="label">
-                            <span
-                                className="label-text">
-                                Seller Name
-                            </span>
-                        </label>
-                        <input type="name" name="sellerName" className="input input-bordered" />
-                    </div>
 
                     <div className="form-control">
                         <label className="label">
                             <span
                                 className="label-text">
-                                Sub Category Choose One: Racing Car/Truck/Mini Fire Truck
+                                *Toy Photo
+                            </span>
+                        </label>
+                        <input type="text" name="picture" className="input input-bordered" />
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span
+                                className="label-text">
+                                *Sub Category Choose One Item: Racing Car/Truck/Mini Fire Truck
                             </span>
                         </label>
                         <input type="text" name="category" className="input input-bordered" />
@@ -105,7 +98,18 @@ const AddToy = () => {
                         <label className="label">
                             <span
                                 className="label-text">
-                                Seller Email
+                                *Seller Name
+                            </span>
+                        </label>
+                        <input type="name" name="sellerName" className="input input-bordered" />
+                    </div>
+
+
+                    <div className="form-control">
+                        <label className="label">
+                            <span
+                                className="label-text">
+                                *Seller Email
                             </span>
                         </label>
                         <input type="text" defaultValue={user?.email} className="input input-bordered" />
@@ -115,7 +119,7 @@ const AddToy = () => {
                         <label className="label">
                             <span
                                 className="label-text">
-                                Price
+                                *Price$
                             </span>
                         </label>
                         <input type="text" name="price" className="input input-bordered" />
@@ -125,28 +129,29 @@ const AddToy = () => {
                         <label className="label">
                             <span
                                 className="label-text">
-                                Rating
+                                *Available Quantity
                             </span>
                         </label>
-                        <input type="text" name="rating" className="input input-bordered" />
+                        <input type="text" name="quantity" className="input input-bordered" />
                     </div>
 
                     <div className="form-control">
                         <label className="label">
                             <span
                                 className="label-text">
-                                Available Quantity
+                                *Ratings
                             </span>
                         </label>
-                        <input type="text" name="quantity" className="input input-bordered" />
+                        <input type="text" name="rating" className="input input-bordered" />
                     </div>
+
                 </div>
 
                 <div className="form-control">
                     <label className="label">
                         <span
                             className="label-text">
-                            Details Description
+                            *Details Description
                         </span>
                     </label>
                     <input type="text" name="description" className="input input-bordered" />
