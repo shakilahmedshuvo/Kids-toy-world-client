@@ -95,7 +95,7 @@ const Footer = () => {
                     </div>
                 </footer>
                 <footer className="footer px-10 py-4">
-                    <small className="text-zinc-700">
+                    <small className="text-slate-300">
                         @ ALL RIGHTS RESERVED BY KIDS TOYS WORLD SAS.
                         <br />
                         © 2023 Trademarks and brands are the property of their respective owners.

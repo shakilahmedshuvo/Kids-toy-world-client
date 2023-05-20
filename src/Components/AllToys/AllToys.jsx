@@ -13,6 +13,9 @@ const AllToys = () => {
             <p className="text-center font-bold text-2xl text-slate-500 pb-5">
                 Total Toys: {data.length}
             </p>
+            <p className="text-center font-bold text-1xl text-slate-500 pb-5">
+                Our Toys is Awesome. . .
+            </p>
             <table className="table w-full">
                 {/* head */}
                 <thead>
