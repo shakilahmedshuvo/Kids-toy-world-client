@@ -103,13 +103,13 @@ const NavBar = () => {
                             </>
                             :
                             <>
-                                <button
-                                    className="btn btn-info font-bold bg-sky-500 text-white">
-                                    <Link
-                                        to="/login">
+                                <Link
+                                    to="/login">
+                                    <button
+                                        className="btn btn-info font-bold bg-sky-500 text-white">
                                         Login
-                                    </Link>
-                                </button>
+                                    </button>
+                                </Link>
                             </>
                     }
                 </div>
