@@ -24,14 +24,14 @@ const OneTabs = ({ one }) => {
                     {name}
                 </h2>
                 <div className="my-2">
-                    <p className="my-5">
+                    <p>
                         Price: {price}
                     </p>
                     <p>
                         Ratings: {ratings}
                     </p>
                 </div>
-                <div className="mt-8">
+                <div className="mt-1">
                     {/* btn condition */}
                     {
                         user ?
