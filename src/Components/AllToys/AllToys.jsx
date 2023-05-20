@@ -3,7 +3,7 @@ import AllToysMap from "./AllToysMap";
 
 const AllToys = () => {
     const data = useLoaderData();
-    console.log(data);
+    // console.log(data);
 
     return (
         <div className="overflow-x-auto max-w-6xl mx-auto mb-14">
@@ -36,7 +36,7 @@ const AllToys = () => {
                             Available Quantities
                         </th>
                         <th className="text-center">
-                            More Info
+                            View More Info
                         </th>
                     </tr>
                 </thead>

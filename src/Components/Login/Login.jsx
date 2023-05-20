@@ -52,7 +52,6 @@ const Login = () => {
             })
     }
 
-
     return (
         <>
             <div className="mt-10">
@@ -110,7 +109,8 @@ const Login = () => {
                                             <small className="text-neutral-700">
                                                 Don't Have an Account? New to Kids Toy World?
                                                 <br />
-                                                Please<Link className="font-extrabold text-sky-500" to='/registration'> Registration</Link>
+                                                Please<Link className
+                                                ="font-extrabold text-sky-500" to='/registration'> Registration</Link>
                                             </small>
                                         </label>
                                     </div>

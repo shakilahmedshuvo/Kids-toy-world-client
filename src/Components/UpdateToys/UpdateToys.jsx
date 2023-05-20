@@ -27,7 +27,7 @@ const UpdateToys = () => {
             quantity,
             description
         };
-        console.log(allDataUpdate);
+        // console.log(allDataUpdate);
 
         // data post to the backend server( mongodb )
         fetch(`http://localhost:5000/updateToys/${_id}`, {

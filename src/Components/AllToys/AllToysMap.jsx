@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const AllToysMap = ({ data }) => {
 
@@ -21,9 +22,11 @@ const AllToysMap = ({ data }) => {
                 {quantity}
             </td>
             <td className="text-center">
-                <button className="btn bg-sky-500 border-0 font-bold">
+                <Link
+                    to={`/viewToys/${_id}`}
+                    className="btn bg-sky-500 border-0 font-bold">
                     View More
-                </button>
+                </Link>
             </td>
         </tr>
     );
