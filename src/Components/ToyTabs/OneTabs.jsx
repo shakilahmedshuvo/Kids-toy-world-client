@@ -1,6 +1,10 @@
+import { useContext } from "react";
+import { AuthContext } from "../Providers/AuthProvider";
+import { Link } from "react-router-dom";
 
 const OneTabs = ({ one }) => {
     const { id, name, photo, price, ratings } = one;
+    const { user } = useContext(AuthContext);
 
     return (
         <div className="flex gap-6">
@@ -22,9 +26,23 @@ const OneTabs = ({ one }) => {
                     </p>
                 </div>
                 <div className="mt-8">
-                    <button className="btn bg-sky-500 border-0">
-                        View More
-                    </button>
+                    {/* btn condition */}
+                    {
+                        user ?
+                            <>
+                                <button className="btn bg-sky-500 border-0">
+                                    View More
+                                </button>
+                            </>
+                            :
+                            <>
+                                <Link to="/login">
+                                    <button className="btn bg-sky-500 border-0">
+                                        View More
+                                    </button>
+                                </Link>
+                            </>
+                    }
                 </div>
             </div>
         </div>

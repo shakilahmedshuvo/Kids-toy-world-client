@@ -1,11 +1,9 @@
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import { AuthContext } from '../Providers/AuthProvider';
 import OneTabs from './OneTabs';
 
 const ToyTabs = () => {
-    const { user } = useContext(AuthContext);
 
     const [toysOne, setToysOne] = useState([]);
     const [toysTwo, setToysTwo] = useState([]);
