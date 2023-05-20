@@ -56,7 +56,7 @@ const AddToy = () => {
             })
     }
     return (
-        <div className="max-w-5xl mx-auto font-bold mb-10">
+        <div className="max-w-5xl mx-auto font-bold mb-10"  data-aos="zoom-out">
             <h2 className="text-4xl font-bold text-center text-sky-500 my-5">
                 Add To Your Toy
             </h2>

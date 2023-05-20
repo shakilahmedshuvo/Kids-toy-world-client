@@ -27,7 +27,9 @@ const ViewToy = () => {
             <div className="card lg:card-side bg-base-100 shadow-xl">
                 <figure>
                     <img
-                        src={picture} alt="Album" />
+                        src={picture}
+                        data-aos="zoom-out"
+                        alt="" />
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title text-2xl font-extrabold text-sky-500">

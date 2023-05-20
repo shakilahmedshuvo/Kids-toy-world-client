@@ -45,7 +45,7 @@ const Registration = () => {
 
     return (
         <>
-            <div className="mt-10">
+            <div className="mt-10" data-aos="zoom-out">
                 <h2 className="text-4xl font-bold text-center text-sky-800">
                     Registration
                 </h2>
@@ -53,7 +53,7 @@ const Registration = () => {
                     Please Registration!
                 </p>
             </div>
-            <div className="font-bold mb-10">
+            <div className="font-bold mb-10" data-aos="zoom-out">
                 <div className="hero max-w-6xl mx-auto">
                     <div className="hero-content">
                         <div className="text-center lg:text-left">

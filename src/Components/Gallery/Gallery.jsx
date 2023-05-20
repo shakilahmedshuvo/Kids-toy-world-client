@@ -16,7 +16,7 @@ const Gallery = () => {
                 your little ones.
             </p>
             {/* count down option start */}
-            <div className="mx-auto text-center grid grid-cols-3 mt-5">
+            <div className="mx-auto text-center grid grid-cols-3 mt-5"  data-aos="zoom-out">
                 <div>
                 </div>
                 <div className="grid grid-flow-col gap-5 text-center auto-cols-max">

@@ -15,6 +15,7 @@ const SingleMyToys = ({ singleToys, handleDelete }) => {
             <td className="w-[20%] h-[20%]">
                 <img
                     src={picture}
+                    data-aos="zoom-out"
                     alt="" />
             </td>
             <td>
@@ -30,7 +31,7 @@ const SingleMyToys = ({ singleToys, handleDelete }) => {
             <td className="text-center">
                 {price}$
             </td>
-            <td className="text-center">
+            <td className="text-center" data-aos="zoom-out">
                 <Link
                     to={`/update/${_id}`}
                     className="btn bg-sky-500 border-0 font-bold mx-auto">

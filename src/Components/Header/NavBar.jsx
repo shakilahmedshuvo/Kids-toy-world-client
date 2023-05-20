@@ -86,7 +86,7 @@ const NavBar = () => {
                         <img src="" alt="" />
                     </Link>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-center hidden lg:flex" data-aos="zoom-in">
                     <ul className="menu menu-horizontal px-1">
                         {navBarItems}
                     </ul>
@@ -97,6 +97,7 @@ const NavBar = () => {
                             <>
                                 <button
                                     onClick={userLogOut}
+                                    data-aos="zoom-out"
                                     className="btn btn-info font-bold bg-sky-500 text-white">
                                     Logout
                                 </button>
