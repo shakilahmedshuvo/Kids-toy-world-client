@@ -19,7 +19,7 @@
 * Customer's Favorites
 * KIDS TOY GALLERY
 * kids Toy Car's
-* Footer
+* & Footer
 
 * Server Data Link: 
 
