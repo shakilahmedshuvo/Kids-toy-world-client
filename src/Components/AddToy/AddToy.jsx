@@ -58,9 +58,13 @@ const AddToy = () => {
             <h2 className="text-4xl font-bold text-center text-sky-500 my-5">
                 Add To Your Toy
             </h2>
-            <p className="text-center m-10 font-bold text-slate-500">
+            <p className="text-center font-bold text-slate-500">
+                {user?.displayName}
+            </p>
+            <p className="text-center m-5 font-bold text-slate-500">
                 Add a Unique Toy
             </p>
+            <hr className="border-b max-w-2xl mx-auto m-5 border-solid border-4" />
             {/* form section start */}
             <form onSubmit={handleBookService}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

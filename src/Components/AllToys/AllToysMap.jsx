@@ -15,7 +15,7 @@ const AllToysMap = ({ data }) => {
                 {category}
             </td>
             <td className="text-center">
-                {price}
+                {price}$
             </td>
             <td className="text-center">
                 {quantity}

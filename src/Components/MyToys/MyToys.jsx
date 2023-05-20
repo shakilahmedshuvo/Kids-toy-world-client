@@ -54,21 +54,24 @@ const MyToys = () => {
     }
 
     return (
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto font-bold">
             <h2 className="font-bold text-5xl text-center m-5 pb-4 text-sky-500">
                 My Toys
             </h2>
             <p className="text-center font-bold text-2xl text-slate-500 pb-5">
                 Update Your Toy's
             </p>
+            <p className="text-center font-bold text-1xl text-slate-500 pb-5">
+            {user?.email}
+            </p>
             <table className="table w-full">
                 {/* head */}
                 <thead>
                     <tr>
-                        <th>
+                        <th className="text-center">
                             Delete The Toy
                         </th>
-                        <th>
+                        <th className="text-center">
                             PICTURES
                         </th>
                         <th>
@@ -89,6 +92,7 @@ const MyToys = () => {
                     </tr>
                 </thead>
                 <tbody>
+                    
                     {/* map section start */}
                     {
                         myToys.map(singleToys => <SingleMyToys
