@@ -1,9 +1,15 @@
-import { useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { AuthContext } from '../Providers/AuthProvider';
+import OneTabs from './OneTabs';
 
 const ToyTabs = () => {
+    const { user } = useContext(AuthContext);
 
+    const [toysOne, setToysOne] = useState([]);
+    const [toysTwo, setToysTwo] = useState([]);
+    const [toysThree, setToysThree] = useState([]);
 
     // three sub category get the data from json
     const urlOne = 'http://localhost:5000/toyOne';
@@ -14,33 +20,24 @@ const ToyTabs = () => {
     useEffect(() => {
         fetch(urlOne)
             .then(res => res.json())
-            .then(data => {
-                // setToys(data)
-                console.log(data);
-            })
-    }, [urlOne]);
+            .then(data => setToysOne(data))
+    }, []);
 
     // toy two
     useEffect(() => {
         fetch(urlTwo)
             .then(res => res.json())
-            .then(data => {
-                // setToys(data)
-                console.log(data);
-            })
-    }, [urlTwo]);
+            .then(data => setToysTwo(data))
+    }, []);
 
     // toy three
     useEffect(() => {
         fetch(urlThree)
             .then(res => res.json())
-            .then(data => {
-                // setToys(data)
-                console.log(data);
-            })
-    }, [urlThree]);
+            .then(data => setToysThree(data))
+    }, []);
 
-
+    // console.log(toysOne?.price);
     return (
         <div className='max-w-5xl mx-auto '>
             <hr className="border-b border-solid mt-20 border-4" />
@@ -50,6 +47,9 @@ const ToyTabs = () => {
                 </h2>
                 <p className="text-center font-bold text-2xl text-slate-500 pb-5">
                     Kids Loves His Toys
+                </p>
+                <p className="text-center font-bold text-1xl text-slate-500 pb-5">
+                    Our Toys Tab Section
                 </p>
                 <TabList>
                     <Tab>
@@ -63,17 +63,43 @@ const ToyTabs = () => {
                     </Tab>
                 </TabList>
                 {/* data section starts */}
+                {/* first map section */}
                 <TabPanel>
-                    <h2>Any content 1</h2>
+                    <div className='grid grid-cols-2 my-6'>
+                        {
+                            toysOne.map(one => <OneTabs
+                                key={one.id}
+                                one={one}
+                            ></OneTabs>)
+                        }
+                    </div>
                 </TabPanel>
+
+                {/* second map section */}
                 <TabPanel>
-                    <h2>Any content 2</h2>
+                    <div className='grid grid-cols-2 my-6'>
+                        {
+                            toysTwo.map(one => <OneTabs
+                                key={one.id}
+                                one={one}
+                            ></OneTabs>)
+                        }
+                    </div>
                 </TabPanel>
+
+                {/* third  map section */}
                 <TabPanel>
-                    <h2>3</h2>
+                    <div className='grid grid-cols-2 my-6'>
+                        {
+                            toysThree.map(one => <OneTabs
+                                key={one.id}
+                                one={one}
+                            ></OneTabs>)
+                        }
+                    </div>
                 </TabPanel>
             </Tabs>
-        </div>
+        </div >
     );
 };
 
