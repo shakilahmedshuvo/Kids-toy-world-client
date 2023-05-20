@@ -1,9 +1,11 @@
 import { useLoaderData } from "react-router-dom";
 import AllToysMap from "./AllToysMap";
+import useTitle from "../Hooks/useTitle";
 
 const AllToys = () => {
     const data = useLoaderData();
     // console.log(data);
+    useTitle('AllToys')
 
     return (
         <div className="overflow-x-auto max-w-6xl mx-auto mb-14">

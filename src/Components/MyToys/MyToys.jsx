@@ -2,11 +2,13 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import Swal from "sweetalert2";
 import SingleMyToys from "./SingleMyToys";
+import useTitle from "../Hooks/useTitle";
 
 
 const MyToys = () => {
     const { user } = useContext(AuthContext);
-    const [myToys, setToys] = useState([])
+    const [myToys, setToys] = useState([]);
+    useTitle('My Toys');
 
     const url = `https://kids-toy-world-server.vercel.app/allToys?email=${user?.email}`;
 

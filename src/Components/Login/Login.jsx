@@ -4,12 +4,14 @@ import { AuthContext } from "../Providers/AuthProvider";
 import toast, { Toaster } from 'react-hot-toast';
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { FcGoogle } from "react-icons/fc";
+import useTitle from "../Hooks/useTitle";
 
 const Login = () => {
     const { userLogIn, auth } = useContext(AuthContext);
     // use location hook
     const navigate = useNavigate();
     const location = useLocation();
+    useTitle('Login')
     const from = location.state?.from?.pathname || '/'
 
     const [error, setError] = useState('')

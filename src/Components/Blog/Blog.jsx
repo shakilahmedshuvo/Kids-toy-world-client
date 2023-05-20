@@ -1,6 +1,7 @@
-
+import useTitle from "../Hooks/useTitle";
 
 const Blog = () => {
+    useTitle('Blog')
     return (
         <div className="max-w-6xl mx-auto font-bold py-6">
             <h1 className="text-4xl text-center pb-7">

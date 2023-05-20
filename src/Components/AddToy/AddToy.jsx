@@ -1,9 +1,11 @@
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import toast, { Toaster } from 'react-hot-toast';
+import useTitle from "../Hooks/useTitle";
 
 const AddToy = () => {
     const { user } = useContext(AuthContext);
+    useTitle('AddToy')
 
     // handleBookServices function
     const handleBookService = event => {

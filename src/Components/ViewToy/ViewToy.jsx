@@ -2,11 +2,13 @@ import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import { toast } from "react-hot-toast";
+import useTitle from "../Hooks/useTitle";
 
 
 const ViewToy = () => {
     const { user } = useContext(AuthContext);
     const data = useLoaderData();
+    useTitle('View Toys')
     console.log(data);
     const { picture, name, sellerName, category, price, rating, quantity, description } = data;
 

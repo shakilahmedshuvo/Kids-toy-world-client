@@ -1,7 +1,9 @@
 import { Link, useRouteError } from 'react-router-dom';
+import useTitle from '../Hooks/useTitle';
 
 const ErrorPage = () => {
-    const { error, status } = useRouteError()
+    const { error, status } = useRouteError();
+    useTitle('404 Error')
     return (
         <div className='text-center text-2xl text-warning mt-1'>
             <div className='w-[75%] mx-auto'>

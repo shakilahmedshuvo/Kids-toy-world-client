@@ -2,11 +2,13 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import { toast } from "react-hot-toast";
+import useTitle from "../Hooks/useTitle";
 
 
 const Registration = () => {
     const { createUser } = useContext(AuthContext);
     const [error, setError] = useState('')
+    useTitle('Register')
 
     const handleRegister = (event) => {
         // stop reloading
