@@ -1,7 +1,8 @@
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const SingleMyToys = ({ singleToys, handleDelete }) => {
-    const { _id, name, sellerName, quantity, category, price, picture } = singleToys;
+    const { _id, name, quantity, category, price, picture } = singleToys;
     console.log(singleToys);
     return (
         <tr>
@@ -30,9 +31,11 @@ const SingleMyToys = ({ singleToys, handleDelete }) => {
                 {price}$
             </td>
             <td className="text-center">
-                <button className="btn bg-sky-500 border-0 font-bold mx-auto">
-                    View More
-                </button>
+                <Link
+                    to={`/update/${_id}`}
+                    className="btn bg-sky-500 border-0 font-bold mx-auto">
+                    Update Toy
+                </Link>
             </td>
         </tr>
     );

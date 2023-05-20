@@ -1,9 +1,48 @@
+import { useEffect } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 const ToyTabs = () => {
+
+
+    // three sub category get the data from json
+    const urlOne = 'http://localhost:5000/toyOne';
+    const urlTwo = 'http://localhost:5000/toyTwo';
+    const urlThree = 'http://localhost:5000/toyThree';
+
+    // toy one
+    useEffect(() => {
+        fetch(urlOne)
+            .then(res => res.json())
+            .then(data => {
+                // setToys(data)
+                console.log(data);
+            })
+    }, [urlOne]);
+
+    // toy two
+    useEffect(() => {
+        fetch(urlTwo)
+            .then(res => res.json())
+            .then(data => {
+                // setToys(data)
+                console.log(data);
+            })
+    }, [urlTwo]);
+
+    // toy three
+    useEffect(() => {
+        fetch(urlThree)
+            .then(res => res.json())
+            .then(data => {
+                // setToys(data)
+                console.log(data);
+            })
+    }, [urlThree]);
+
+
     return (
-        <div className='max-w-6xl mx-auto '>
+        <div className='max-w-5xl mx-auto '>
             <hr className="border-b border-solid mt-20 border-4" />
             <Tabs className="max-w-6xl mx-auto my-6 font-bold">
                 <h2 className="font-bold text-5xl text-center m-5 pb-4 text-sky-500">
@@ -14,7 +53,7 @@ const ToyTabs = () => {
                 </p>
                 <TabList>
                     <Tab>
-                        Sports Car
+                        Racing Car
                     </Tab>
                     <Tab>
                         Truck

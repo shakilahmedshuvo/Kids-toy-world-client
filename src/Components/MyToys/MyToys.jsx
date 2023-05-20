@@ -8,7 +8,7 @@ const MyToys = () => {
     const { user } = useContext(AuthContext);
     const [myToys, setToys] = useState([])
 
-    const url = `http://localhost:5000/allToys?email=${user?.email}`
+    const url = `http://localhost:5000/allToys?email=${user?.email}`;
 
     // load the data
     useEffect(() => {

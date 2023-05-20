@@ -10,9 +10,9 @@ const CustomerToys = () => {
             <p className="text-1xl font-bold bg-warning text-white py-2 px-6 text-center rounded-full w-[25%] mx-auto">
                 Recommended
             </p>
-            {/* main div start */}
+            {/* main div start and use the aos package */}
             <div className="grid grid-cols-2 mt-10">
-                <div>
+                <div data-aos="fade-right">
                     <img src="https://img.freepik.com/free-photo/vintage-miniature-car-fake-landscape_155003-1097.jpg?w=740&t=st=1684433870~exp=1684434470~hmac=eb56748cdca34bf292340beab67377992d9e608f4f2f28ca746f9fa45b584d68" alt="" />
                 </div>
                 <div className="lg:ms-10">
