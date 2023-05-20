@@ -17,6 +17,7 @@ import AllToys from './Components/AllToys/AllToys';
 import MyToys from './Components/MyToys/MyToys';
 import UpdateToys from './Components/UpdateToys/UpdateToys';
 import ViewToy from './Components/ViewToy/ViewToy';
+import PrivetRoute from './Components/PrivetRoute/PrivetRoute';
 
 const router = createBrowserRouter([
   {
@@ -60,7 +61,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/viewToys/:id',
-        element: <ViewToy></ViewToy>,
+        element: <PrivetRoute><ViewToy></ViewToy></PrivetRoute>,
         loader: ({ params }) => fetch(`https://kids-toy-world-server.vercel.app/allToys/${params.id}`)
       }
     ]
