@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import toast, { Toaster } from 'react-hot-toast';
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
     const { userLogIn, auth } = useContext(AuthContext);
@@ -99,23 +100,31 @@ const Login = () => {
                                             <h5 className="text-center">
                                                 Login With Google
                                             </h5>
-                                            <img
+                                            <div
                                                 onClick={handleGoogleSignIn}
-                                                className="w-[8%] mt-2 mx-auto"
-                                                src="https://cdn-icons-png.flaticon.com/512/270/270799.png?w=740&t=st=1684395683~exp=1684396283~hmac=e50233f45b29630b8d29f77299b68bcd80736882d1ce982695289f2785195413" alt="" />
+                                                className='flex justify-center mx-auto w-[50%] pt-5'>
+                                                <div className="w-full justify-center flex">
+                                                    <FcGoogle
+                                                        className="text-3xl"
+                                                    ></FcGoogle>
+                                                </div>
+                                                <p
+                                                    className='text-slate-500 font-bold w-full text-xl'>
+                                                    Google
+                                                </p>
+                                            </div>
                                         </div>
-                                        <hr className="border-b border-solid border-4" />
                                         <label className="label mt-2">
                                             <small className="text-neutral-700">
                                                 Don't Have an Account? New to Kids Toy World?
                                                 <br />
                                                 Please<Link className
-                                                ="font-extrabold text-sky-500" to='/registration'> Registration</Link>
+                                                    ="font-extrabold text-sky-500" to='/registration'> Registration</Link>
                                             </small>
                                         </label>
                                     </div>
-                                    <div className="form-control mt-6">
-                                        <button className="btn bg-sky-700" type="submit">
+                                    <div className="form-control mt-6" type="submit">
+                                        <button className="btn bg-sky-700" >
                                             Login
                                         </button>
                                     </div>
