@@ -37,7 +37,7 @@ const AddToy = () => {
         // console.log(allInfo);
 
         // data post to the backend server( mongodb )
-        fetch('http://localhost:5000/addToy', {
+        fetch('https://kids-toy-world-server.vercel.app/addToy', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

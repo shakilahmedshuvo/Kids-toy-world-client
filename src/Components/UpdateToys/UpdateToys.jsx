@@ -30,7 +30,7 @@ const UpdateToys = () => {
         // console.log(allDataUpdate);
 
         // data post to the backend server( mongodb )
-        fetch(`http://localhost:5000/updateToys/${_id}`, {
+        fetch(`https://kids-toy-world-server.vercel.app/updateToys/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

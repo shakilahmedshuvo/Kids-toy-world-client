@@ -10,9 +10,9 @@ const ToyTabs = () => {
     const [toysThree, setToysThree] = useState([]);
 
     // three sub category get the data from json
-    const urlOne = 'http://localhost:5000/toyOne';
-    const urlTwo = 'http://localhost:5000/toyTwo';
-    const urlThree = 'http://localhost:5000/toyThree';
+    const urlOne = 'https://kids-toy-world-server.vercel.app/toyOne';
+    const urlTwo = 'https://kids-toy-world-server.vercel.app/toyTwo';
+    const urlThree = 'https://kids-toy-world-server.vercel.app/toyThree';
 
     // toy one
     useEffect(() => {
