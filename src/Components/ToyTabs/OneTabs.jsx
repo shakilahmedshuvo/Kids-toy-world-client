@@ -1,11 +1,17 @@
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import { Link } from "react-router-dom";
+import { toast } from "react-hot-toast";
 
 const OneTabs = ({ one }) => {
     const { id, name, photo, price, ratings } = one;
     const { user } = useContext(AuthContext);
 
+    const handleView = () => {
+        if (!user) {
+            toast.success('You Have To Log In First To View Details')
+        }
+    }
     return (
         <div className="flex gap-6">
             <div className="w-[50%]">
@@ -30,13 +36,16 @@ const OneTabs = ({ one }) => {
                     {
                         user ?
                             <>
-                                <button className="btn bg-sky-500 border-0">
+                                <button
+                                    className="btn bg-sky-500 border-0">
                                     View More
                                 </button>
                             </>
                             :
                             <>
-                                <Link to="/login">
+                                <Link
+                                    onClick={handleView}
+                                    to="/login">
                                     <button className="btn bg-sky-500 border-0">
                                         View More
                                     </button>
