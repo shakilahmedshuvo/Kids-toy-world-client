@@ -7,11 +7,22 @@ const CustomerToys = () => {
             <h2 className="text-center font-bold text-5xl mt-16 mb-5">
                 Customer's Favorites
             </h2>
-            <p className="text-1xl font-bold bg-warning text-white py-2 px-6 text-center rounded-full w-[25%] mx-auto">
+            {/* <p className="text-1xl font-bold bg-warning text-white py-2 px-6 text-center rounded-full w-[25%] mx-auto grid lg:grid-cols-3 sm:grid-rows-1">
                 Recommended
-            </p>
+            </p> */}
+            <div className="grid lg:grid-cols-3">
+                <div>
+
+                </div>
+                <p className="text-1xl font-bold bg-warning text-white py-2 px-6 text-center rounded-full">
+                    Recommended
+                </p>
+                <div>
+
+                </div>
+            </div>
             {/* main div start and use the aos package */}
-            <div className="grid grid-cols-2 mt-10">
+            <div className="grid lg:grid-cols-2 mt-10 sm:">
                 <div data-aos="fade-right">
                     <img src="https://img.freepik.com/free-photo/vintage-miniature-car-fake-landscape_155003-1097.jpg?w=740&t=st=1684433870~exp=1684434470~hmac=eb56748cdca34bf292340beab67377992d9e608f4f2f28ca746f9fa45b584d68" alt="" />
                 </div>

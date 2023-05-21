@@ -10,8 +10,8 @@ const ClientSays = () => {
                 Our Costumer Says
             </p>
             {/* grid section */}
-            <div className="flex flex-col w-full lg:flex-row gap-5">
-                <div className="card w-96 glass bg-sky-200 hover:bg-sky-300"
+            <div className="flex flex-col lg:grid-cols-4 w-full lg:flex-row gap-5">
+                <div className="card w-full glass bg-sky-200 hover:bg-sky-300"
                     data-aos="zoom-out-down">
                     <figure>
                         <div className="avatar indicator mt-5">
@@ -47,7 +47,7 @@ const ClientSays = () => {
                         </small>
                     </div>
                 </div>
-                <div className="card w-96 glass bg-sky-200 hover:bg-sky-300"
+                <div className="card w-full glass bg-sky-200 hover:bg-sky-300"
                     data-aos="zoom-out-down">
                     <figure>
                         <div className="avatar indicator mt-5">
@@ -83,7 +83,7 @@ const ClientSays = () => {
                         </small>
                     </div>
                 </div>
-                <div className="card w-96 glass bg-sky-200 hover:bg-sky-300"
+                <div className="card w-full glass bg-sky-200 hover:bg-sky-300"
                     data-aos="zoom-out-down">
                     <figure>
                         <div className="avatar indicator mt-5">
@@ -119,7 +119,7 @@ const ClientSays = () => {
                         </small>
                     </div>
                 </div>
-                <div className="card w-96 glass bg-sky-200 hover:bg-sky-300"
+                <div className="card w-full glass bg-sky-200 hover:bg-sky-300"
                     data-aos="zoom-out-down">
                     <figure>
                         <div className="avatar indicator mt-5">
@@ -158,7 +158,7 @@ const ClientSays = () => {
             </div>
             <div data-aos="zoom-out-down">
                 <h2 className="text-4xl font-bold text-center text-sky-500 mt-20">
-                    Thank You Our Customer
+                    Thank You Our Customer's
                 </h2>
             </div>
         </div>

@@ -21,7 +21,7 @@ const Gallery = () => {
                 </h2>
             </div>
             {/* photo grid section start and use aos Package */}
-            <div className="grid grid-cols-3 gap-3 max-w-5xl mx-auto" data-aos="zoom-in-down">
+            <div className="grid lg:grid-cols-3 gap-3 max-w-5xl mx-auto" data-aos="zoom-in-down">
                 <img
                     className="rounded-xl"
                     src="https://img.freepik.com/free-photo/small-red-car-toy-kid-child-playing-with-it_114579-7239.jpg?w=826&t=st=1684491970~exp=1684492570~hmac=46cab902634914accf1d15f3f0425c38fac741f7158499b7d311794cda8475e1" alt="" />

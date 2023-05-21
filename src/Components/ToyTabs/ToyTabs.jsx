@@ -63,7 +63,7 @@ const ToyTabs = () => {
                 {/* data section starts */}
                 {/* first map section */}
                 <TabPanel>
-                    <div className='grid grid-cols-2 my-6'>
+                    <div className='grid lg:grid-cols-2 my-6'>
                         {
                             toysOne.map(one => <OneTabs
                                 key={one.id}
@@ -75,7 +75,7 @@ const ToyTabs = () => {
 
                 {/* second map section */}
                 <TabPanel>
-                    <div className='grid grid-cols-2 my-6'>
+                    <div className='grid lg:grid-cols-2 my-6'>
                         {
                             toysTwo.map(one => <OneTabs
                                 key={one.id}
@@ -87,7 +87,7 @@ const ToyTabs = () => {
 
                 {/* third  map section */}
                 <TabPanel>
-                    <div className='grid grid-cols-2 my-6'>
+                    <div className='grid lg:grid-cols-2 my-6'>
                         {
                             toysThree.map(one => <OneTabs
                                 key={one.id}
