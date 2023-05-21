@@ -6,22 +6,32 @@ const AllToysMap = ({ data }) => {
 
     return (
         <tr>
-            <th>
+            <th data-aos="zoom-in">
                 {name}
             </th>
-            <td>
+            <td
+                data-aos="zoom-in"
+            >
                 {sellerName}
             </td>
-            <td>
+            <td
+                data-aos="zoom-in"
+            >
                 {category}
             </td>
-            <td className="text-center">
+            <td
+                data-aos="zoom-in"
+                className="text-center">
                 {price}$
             </td>
-            <td className="text-center">
+            <td
+                data-aos="zoom-in"
+                className="text-center">
                 {quantity}
             </td>
-            <td className="text-center">
+            <td
+                data-aos="zoom-in"
+                className="text-center">
                 <Link
                     to={`/viewToys/${_id}`}
                     className="btn bg-sky-500 border-0 font-bold">

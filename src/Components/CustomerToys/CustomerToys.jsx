@@ -1,6 +1,17 @@
 import { FaStar, FaStarHalfAlt, FaMinus, FaPlus } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 const CustomerToys = () => {
+    const handleAddToCart = () => {
+        Swal.fire({
+            position: 'top-centner',
+            icon: 'success',
+            title: 'Your Toy Add To The Cart',
+            showConfirmButton: false,
+            timer: 1500
+        })
+
+    }
     return (
         <div className="max-w-5xl mx-auto">
             <hr className="border-b border-solid border-2 mt-20" />
@@ -110,10 +121,14 @@ const CustomerToys = () => {
                     </div>
                     {/* btn */}
                     <div className="grid grid-cols-2 gap-10 mt-2">
-                        <button className="btn rounded-full text-black font-bold bg-warning border-0 px-7">
+                        <button
+                            onClick={handleAddToCart}
+                            className="btn rounded-full text-black font-bold bg-warning border-0 px-7">
                             Add to Cart
                         </button>
-                        <button className="btn rounded-full text-black font-bold bg-warning border-0 px-7">
+                        <button
+                            onClick={handleAddToCart}
+                            className="btn rounded-full text-black font-bold bg-warning border-0 px-7">
                             Buy it Now
                         </button>
                     </div>

@@ -13,14 +13,14 @@ const OneTabs = ({ one }) => {
         }
     }
     return (
-        <div className="grid lg:grid-cols-2 gap-2 mt-5">
+        <div className="grid lg:grid-cols-2 gap-5 mt-5">
             <div>
                 <img
                     className="rounded-xl"
                     src={photo} data-aos="zoom-out" alt="" />
             </div>
             <div>
-                <h2 className="text-3xl sm:text-center text-sky-500">
+                <h2 className="text-3xl text-sky-500">
                     {name}
                 </h2>
                 <div className="my-2">

@@ -156,8 +156,10 @@ const ClientSays = () => {
                     </div>
                 </div>
             </div>
-            <div data-aos="zoom-out-down">
-                <h2 className="text-4xl font-bold text-center text-sky-500 mt-20">
+            <div>
+                <h2
+                    data-aos="zoom-out-in"
+                    className="text-3xl font-bold text-center text-sky-500 mt-20">
                     Thank You Our Customer's
                 </h2>
             </div>
