@@ -1,4 +1,5 @@
 import Banner from "../Banner/Banner";
+import ClientSays from "../ClientSays/ClientSays";
 import CustomerToys from "../CustomerToys/CustomerToys";
 import Gallery from "../Gallery/Gallery";
 import useTitle from "../Hooks/useTitle";
@@ -11,6 +12,7 @@ const Home = () => {
             <Banner></Banner>
             <CustomerToys></CustomerToys>
             <Gallery></Gallery>
+            <ClientSays></ClientSays>
             <ToyTabs></ToyTabs>
         </div>
     );
