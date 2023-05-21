@@ -21,6 +21,4 @@
 * kids Toy Car's
 * & Footer
 
-* Server Data Link: 
-
-* Live Website Link: 
+* Live Website Link: https://kids-toy-world.web.app/
