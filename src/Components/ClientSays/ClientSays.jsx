@@ -11,7 +11,8 @@ const ClientSays = () => {
             </p>
             {/* grid section */}
             <div className="flex flex-col w-full lg:flex-row gap-5">
-                <div className="card w-96 glass bg-sky-200 hover:bg-sky-300">
+                <div className="card w-96 glass bg-sky-200 hover:bg-sky-300"
+                    data-aos="zoom-out-down">
                     <figure>
                         <div className="avatar indicator mt-5">
                             <span className="indicator-item badge bg-rose-600 border-0">
@@ -46,7 +47,8 @@ const ClientSays = () => {
                         </small>
                     </div>
                 </div>
-                <div className="card w-96 glass bg-sky-200 hover:bg-sky-300">
+                <div className="card w-96 glass bg-sky-200 hover:bg-sky-300"
+                    data-aos="zoom-out-down">
                     <figure>
                         <div className="avatar indicator mt-5">
                             <span className="indicator-item badge bg-rose-600 border-0">
@@ -81,7 +83,8 @@ const ClientSays = () => {
                         </small>
                     </div>
                 </div>
-                <div className="card w-96 glass bg-sky-200 hover:bg-sky-300">
+                <div className="card w-96 glass bg-sky-200 hover:bg-sky-300"
+                    data-aos="zoom-out-down">
                     <figure>
                         <div className="avatar indicator mt-5">
                             <span className="indicator-item badge bg-rose-600 border-0">
@@ -116,7 +119,8 @@ const ClientSays = () => {
                         </small>
                     </div>
                 </div>
-                <div className="card w-96 glass bg-sky-200 hover:bg-sky-300">
+                <div className="card w-96 glass bg-sky-200 hover:bg-sky-300"
+                    data-aos="zoom-out-down">
                     <figure>
                         <div className="avatar indicator mt-5">
                             <span className="indicator-item badge bg-rose-600 border-0">
@@ -152,7 +156,7 @@ const ClientSays = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div data-aos="zoom-out-down">
                 <h2 className="text-4xl font-bold text-center text-sky-500 mt-20">
                     Thank You Our Customer
                 </h2>
