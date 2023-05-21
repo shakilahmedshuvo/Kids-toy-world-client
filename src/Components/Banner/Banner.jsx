@@ -5,7 +5,7 @@ const Banner = () => {
             <h2 className="text-5xl font-extrabold text-center p-5 text-sky-500">
                 KIDS TOY WORLD
             </h2>
-            <hr className="border-b border-gray-500 border-1 max-w-5xl mx-auto" />
+            <hr className="border-b border-gray-500 border-1 max-w-7xl mx-auto" />
             <p className="text-center font-bold p-2">
                 Safe Toys For Children, High Durable Toys, Recyclable Materials, Safe and Non-Toxic Toys
             </p>
@@ -17,7 +17,7 @@ const Banner = () => {
                     Learn More
                 </button>
             </div>
-            <div className="carousel w-full h-full max-w-6xl mx-auto mt-10">
+            <div className="carousel w-full h-full max-w-7xl mx-auto mt-10">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src="https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074078.jpg?w=996&t=st=1684670897~exp=1684671497~hmac=79d0b359101d7d7dba8cd1c92c0ccf1eb5af19ea42bdb4a2ef5836fd20720cad" className="w-full rounded-xl" />
                     <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">

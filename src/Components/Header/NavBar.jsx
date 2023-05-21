@@ -66,7 +66,7 @@ const NavBar = () => {
         </>
     return (
         <div className="bg-sky-500 font-bold">
-            <div className="navbar mx-auto  max-w-6xl text-white">
+            <div className="navbar mx-auto  max-w-7xl text-white">
                 <div className="navbar-start">
                     <img
                         className="w-[12%] rounded-xl mr-3"

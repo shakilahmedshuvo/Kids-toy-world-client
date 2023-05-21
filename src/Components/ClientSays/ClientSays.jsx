@@ -1,7 +1,7 @@
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 const ClientSays = () => {
     return (
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
             <hr className="border-b border-solid border-4 my-20" />
             <h2 className="text-5xl font-bold text-center text-sky-500">
                 Customer FeedBack

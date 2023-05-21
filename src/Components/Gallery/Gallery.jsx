@@ -2,7 +2,7 @@
 
 const Gallery = () => {
     return (
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
             {/* Gallery section start */}
             <hr className="border-b border-solid m-16" />
             <h2 className="text-4xl text-center font-bold text-sky-500">
@@ -21,7 +21,7 @@ const Gallery = () => {
                 </h2>
             </div>
             {/* photo grid section start and use aos Package */}
-            <div className="grid lg:grid-cols-3 gap-3 max-w-5xl mx-auto">
+            <div className="grid lg:grid-cols-3 gap-3 max-w-7xl mx-auto">
                 <img
                     data-aos="zoom-in-up"
                     className="rounded-xl"

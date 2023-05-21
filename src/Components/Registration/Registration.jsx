@@ -54,7 +54,7 @@ const Registration = () => {
                 </p>
             </div>
             <div className="font-bold mb-10" data-aos="zoom-out">
-                <div className="hero max-w-6xl mx-auto">
+                <div className="hero max-w-7xl mx-auto">
                     <div className="hero-content">
                         <div className="text-center lg:text-left">
                             <img src="https://img.freepik.com/premium-vector/illustration-create-account-flat-design_9206-2974.jpg?w=740" alt="" />

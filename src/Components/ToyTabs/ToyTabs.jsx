@@ -37,9 +37,9 @@ const ToyTabs = () => {
 
     // console.log(toysOne?.price);
     return (
-        <div className='max-w-5xl mx-auto mb-20'>
+        <div className='max-w-7xl mx-auto mb-20'>
             <hr className="border-b border-solid mt-20 border-4" />
-            <Tabs className="max-w-6xl mx-auto my-6 font-bold">
+            <Tabs className="max-w-7xl mx-auto my-6 font-bold">
                 <h2 className="font-bold text-5xl text-center m-5 pb-4 text-sky-500">
                     kids Toy Car's
                 </h2>

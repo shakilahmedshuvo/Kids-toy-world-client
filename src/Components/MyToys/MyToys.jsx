@@ -56,7 +56,7 @@ const MyToys = () => {
     }
 
     return (
-        <div className="max-w-5xl mx-auto font-bold">
+        <div className="max-w-6xl mx-auto font-bold">
             <h2 className="font-bold text-5xl text-center m-5 pb-4 text-sky-500">
                 My Toys
             </h2>

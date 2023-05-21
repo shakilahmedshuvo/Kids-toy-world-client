@@ -8,7 +8,7 @@ const AllToys = () => {
     useTitle('AllToys')
 
     return (
-        <div className="overflow-x-auto max-w-6xl mx-auto mb-14">
+        <div className="overflow-x-auto max-w-7xl mx-auto mb-14">
             <h2 className="font-bold text-5xl text-center m-5 pb-4 text-sky-500">
                 Our All Toys
             </h2>

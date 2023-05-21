@@ -13,7 +13,7 @@ const CustomerToys = () => {
 
     }
     return (
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
             <hr className="border-b border-solid border-2 mt-20" />
             <h2 className="text-center font-bold text-5xl mt-16 mb-5">
                 Customer's Favorites

@@ -57,7 +57,7 @@ const Login = () => {
 
     return (
         <>
-            <div className="mt-10"  data-aos="zoom-out">
+            <div className="mt-10" data-aos="zoom-out">
                 <h2 className="text-4xl font-bold text-center text-sky-800">
                     Login
                 </h2>
@@ -66,7 +66,7 @@ const Login = () => {
                 </p>
             </div>
             <div className="font-bold mb-10"  data-aos="zoom-out">
-                <div className="hero max-w-6xl mx-auto">
+                <div className="hero max-w-7xl mx-auto">
                     <div className="hero-content">
                         <div className="text-center lg:text-left">
                             <img src="https://img.freepik.com/free-vector/global-data-security-personal-data-security-cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection_1150-37373.jpg?w=740&t=st=1684351301~exp=1684351901~hmac=1360b442aeae7ada66feaaf7e313f926b3b3d6af866b6248fa40fe11ee76a7ce" alt="" />

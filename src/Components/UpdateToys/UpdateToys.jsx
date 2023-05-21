@@ -55,7 +55,7 @@ const UpdateToys = () => {
     }
 
     return (
-        <div className="max-w-5xl mx-auto font-bold mb-10">
+        <div className="max-w-6xl mx-auto font-bold mb-10">
             <h2 className="font-bold text-5xl text-center m-5 pb-4 text-sky-500">
                 Update Your Toys
             </h2>
