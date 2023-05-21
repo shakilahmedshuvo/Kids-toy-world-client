@@ -15,38 +15,6 @@ const Gallery = () => {
                 <br />
                 your little ones.
             </p>
-            {/* count down option start */}
-            <div className="mx-auto text-center grid grid-cols-3 mt-5"  data-aos="zoom-out">
-                <div>
-                </div>
-                <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
-                    <div className="flex flex-col p-2 bg-sky-500 rounded-box text-neutral-content">
-                        <span className="countdown font-mono text-5xl">
-                            <span style={{ "--value": 15 }}></span>
-                        </span>
-                        days
-                    </div>
-                    <div className="flex flex-col p-2 bg-sky-500 rounded-box text-neutral-content">
-                        <span className="countdown font-mono text-5xl">
-                            <span style={{ "--value": 10 }}></span>
-                        </span>
-                        hours
-                    </div>
-                    <div className="flex flex-col p-2 bg-sky-500 rounded-box text-neutral-content">
-                        <span className="countdown font-mono text-5xl">
-                            <span style={{ "--value": 24 }}></span>
-                        </span>
-                        min
-                    </div>
-                    <div className="flex flex-col p-2 bg-sky-500 rounded-box text-neutral-content">
-                        <span className="countdown font-mono text-5xl">
-                            <span style={{ "--value": 2 }}></span>
-                        </span>
-                        sec
-                    </div>
-                </div>
-                {/* count down option end */}
-            </div>
             <div>
                 <h2 className="font-bold text-2xl  text-center m-6">
                     Our Photos Gallery
