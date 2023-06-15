@@ -22,46 +22,46 @@ import PrivetRoute from './Components/PrivetRoute/PrivetRoute';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Main></Main>,
-    errorElement: <ErrorPage></ErrorPage>,
+    element: <Main />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home />
       },
       {
         path: '/blog',
-        element: <Blog></Blog>
+        element: <Blog />
       },
       {
         path: '/login',
-        element: <Login></Login>
+        element: <Login />
       },
       {
         path: '/registration',
-        element: <Registration></Registration>
+        element: <Registration />
       },
       {
         path: '/addToy',
-        element: <AddToy></AddToy>
+        element: <AddToy />
       },
       {
         path: '/allToys',
-        element: <AllToys></AllToys>,
+        element: <AllToys />,
         loader: () => fetch('https://kids-toy-world-server.vercel.app/allToys')
       },
       {
         path: '/myToys',
-        element: <PrivetRoute><MyToys></MyToys></PrivetRoute>
+        element: <PrivetRoute><MyToys /></PrivetRoute>
       },
       {
         path: '/update/:id',
-        element: <UpdateToys></UpdateToys>,
+        element: <UpdateToys />,
         loader: ({ params }) => fetch(`https://kids-toy-world-server.vercel.app/allToys/${params.id}`)
       },
       {
         path: '/viewToys/:id',
-        element: <PrivetRoute><ViewToy></ViewToy></PrivetRoute>,
+        element: <PrivetRoute><ViewToy /></PrivetRoute>,
         loader: ({ params }) => fetch(`https://kids-toy-world-server.vercel.app/allToys/${params.id}`)
       }
     ]
@@ -70,8 +70,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AuthProvider>
-      <RouterProvider router={router} />
-    </AuthProvider>
+    <div className='overflow-hidden'>
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
+    </div>
   </React.StrictMode>,
 )

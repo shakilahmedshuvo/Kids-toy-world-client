@@ -9,11 +9,11 @@ const Home = () => {
     useTitle('Home')
     return (
         <div>
-            <Banner></Banner>
-            <CustomerToys></CustomerToys>
-            <Gallery></Gallery>
-            <ClientSays></ClientSays>
-            <ToyTabs></ToyTabs>
+            <Banner />
+            <CustomerToys />
+            <Gallery />
+            <ClientSays />
+            <ToyTabs />
         </div>
     );
 };

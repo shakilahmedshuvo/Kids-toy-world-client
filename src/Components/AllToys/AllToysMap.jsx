@@ -6,17 +6,16 @@ const AllToysMap = ({ data }) => {
 
     return (
         <tr>
-            <th data-aos="zoom-in">
+            <th
+                data-aos="zoom-in">
                 {name}
             </th>
             <td
-                data-aos="zoom-in"
-            >
+                data-aos="zoom-in">
                 {sellerName}
             </td>
             <td
-                data-aos="zoom-in"
-            >
+                data-aos="zoom-in">
                 {category}
             </td>
             <td

@@ -17,7 +17,9 @@ const OneTabs = ({ one }) => {
             <div>
                 <img
                     className="rounded-xl"
-                    src={photo} data-aos="zoom-out" alt="" />
+                    src={photo}
+                    data-aos="zoom-out"
+                    alt="" />
             </div>
             <div>
                 <h2 className="text-3xl text-sky-500">

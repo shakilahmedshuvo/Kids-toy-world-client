@@ -72,7 +72,6 @@ const ToyTabs = () => {
                         }
                     </div>
                 </TabPanel>
-
                 {/* second map section */}
                 <TabPanel>
                     <div className='grid lg:grid-cols-2 my-6'>

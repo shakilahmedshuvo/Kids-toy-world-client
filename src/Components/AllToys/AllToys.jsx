@@ -5,20 +5,25 @@ import useTitle from "../Hooks/useTitle";
 const AllToys = () => {
     const data = useLoaderData();
     // console.log(data);
-    useTitle('AllToys')
+    useTitle('AllToys');
 
     return (
         <div className="overflow-x-auto max-w-7xl mx-auto mb-14">
-            <h2 className="font-bold text-5xl text-center m-5 pb-4 text-sky-500">
+            <h2
+                className="font-bold text-5xl text-center m-5 pb-4 text-sky-500">
                 Our All Toys
             </h2>
-            <p className="text-center font-bold text-2xl text-slate-500 pb-5">
+            <p
+                className="text-center font-bold text-2xl text-slate-500 pb-5">
                 Total Toys: {data.length}
             </p>
-            <p className="text-center font-bold text-1xl text-slate-500 pb-5">
+            <p
+                className="text-center font-bold text-1xl text-slate-500 pb-5">
                 Our Toys is Awesome. . .
             </p>
-            <table className="table w-full">
+            {/* table section */}
+            <table
+                className="table w-full">
                 {/* head */}
                 <thead>
                     <tr>

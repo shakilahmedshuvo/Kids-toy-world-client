@@ -4,17 +4,20 @@ import { Navigate, useLocation } from "react-router-dom";
 
 const PrivetRoute = ({ children }) => {
     const { user, loading } = useContext(AuthContext);
-    const location = useLocation()
+    const location = useLocation();
 
     if (loading) {
-        return <progress className="progress w-56"></progress>
+        return <progress
+            className="progress w-56">
+        </progress>
     }
     if (user) {
         return children;
     }
     return (
-        <Navigate to="/login" replace state={{ from: location }}>
-
+        <Navigate
+            to="/login"
+            replace state={{ from: location }}>
         </Navigate>
     );
 };

@@ -5,7 +5,7 @@ import useTitle from "../Hooks/useTitle";
 
 const AddToy = () => {
     const { user } = useContext(AuthContext);
-    useTitle('AddToy')
+    useTitle('AddToy');
 
     // handleBookServices function
     const handleBookService = event => {
@@ -24,6 +24,7 @@ const AddToy = () => {
         const price = form.price.value;
         const description = form.description.value;
 
+        // get all data
         const allData = {
             picture,
             name,
@@ -35,8 +36,6 @@ const AddToy = () => {
             quantity,
             description
         };
-
-        // console.log(allInfo);
 
         // data post to the backend server( mongodb )
         fetch('https://kids-toy-world-server.vercel.app/addToy', {
@@ -57,18 +56,22 @@ const AddToy = () => {
     }
     return (
         <div className="max-w-6xl mx-auto font-bold mb-10" data-aos="zoom-out">
-            <h2 className="text-4xl font-bold text-center text-sky-500 my-5">
+            <h2
+                className="text-4xl font-bold text-center text-sky-500 my-5">
                 Add To Your Toy
             </h2>
-            <p className="text-center font-bold text-slate-500">
+            <p
+                className="text-center font-bold text-slate-500">
                 {user?.displayName}
             </p>
-            <p className="text-center m-5 font-bold text-slate-500">
+            <p
+                className="text-center m-5 font-bold text-slate-500">
                 Add a Unique Toy
             </p>
             <hr className="border-b max-w-2xl mx-auto m-5 border-solid border-4" />
             {/* form section start */}
-            <form onSubmit={handleBookService}>
+            <form
+                onSubmit={handleBookService}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="form-control">
                         <label className="label">
@@ -77,10 +80,11 @@ const AddToy = () => {
                                 *Toy Name
                             </span>
                         </label>
-                        <input type="text" name="name" className="input input-bordered" />
+                        <input
+                            type="text"
+                            name="name"
+                            className="input input-bordered" />
                     </div>
-
-
                     <div className="form-control">
                         <label className="label">
                             <span
@@ -88,7 +92,10 @@ const AddToy = () => {
                                 *Toy Photo
                             </span>
                         </label>
-                        <input type="text" name="picture" className="input input-bordered" />
+                        <input
+                            type="text"
+                            name="picture"
+                            className="input input-bordered" />
                     </div>
                     <div className="form-control">
                         <label className="label">
@@ -97,9 +104,11 @@ const AddToy = () => {
                                 *Sub Category Choose One Item: Racing Car/Truck/Mini Fire Truck
                             </span>
                         </label>
-                        <input type="text" name="category" className="input input-bordered" />
+                        <input
+                            type="text"
+                            name="category"
+                            className="input input-bordered" />
                     </div>
-
                     <div className="form-control">
                         <label className="label">
                             <span
@@ -107,10 +116,11 @@ const AddToy = () => {
                                 *Seller Name
                             </span>
                         </label>
-                        <input type="name" name="sellerName" className="input input-bordered" />
+                        <input
+                            type="name"
+                            name="sellerName"
+                            className="input input-bordered" />
                     </div>
-
-
                     <div className="form-control">
                         <label className="label">
                             <span
@@ -118,9 +128,11 @@ const AddToy = () => {
                                 *Seller Email
                             </span>
                         </label>
-                        <input type="text" defaultValue={user?.email} className="input input-bordered" />
+                        <input
+                            type="text"
+                            defaultValue={user?.email}
+                            className="input input-bordered" />
                     </div>
-
                     <div className="form-control">
                         <label className="label">
                             <span
@@ -128,9 +140,11 @@ const AddToy = () => {
                                 *Price$
                             </span>
                         </label>
-                        <input type="text" name="price" className="input input-bordered" />
+                        <input
+                            type="text"
+                            name="price"
+                            className="input input-bordered" />
                     </div>
-
                     <div className="form-control">
                         <label className="label">
                             <span
@@ -138,9 +152,11 @@ const AddToy = () => {
                                 *Available Quantity
                             </span>
                         </label>
-                        <input type="text" name="quantity" className="input input-bordered" />
+                        <input
+                            type="text"
+                            name="quantity"
+                            className="input input-bordered" />
                     </div>
-
                     <div className="form-control">
                         <label className="label">
                             <span
@@ -148,11 +164,12 @@ const AddToy = () => {
                                 *Ratings
                             </span>
                         </label>
-                        <input type="text" name="rating" className="input input-bordered" />
+                        <input
+                            type="text"
+                            name="rating"
+                            className="input input-bordered" />
                     </div>
-
                 </div>
-
                 <div className="form-control">
                     <label className="label">
                         <span
@@ -160,11 +177,16 @@ const AddToy = () => {
                             *Details Description
                         </span>
                     </label>
-                    <input type="text" name="description" className="input input-bordered" />
+                    <input
+                        type="text"
+                        name="description"
+                        className="input input-bordered" />
                 </div>
-
                 <div className="form-control mt-6">
-                    <input className="btn border-0 bg-sky-500 btn-block" type="submit" value="Order Confirm" />
+                    <input
+                        className="btn border-0 bg-sky-500 btn-block"
+                        type="submit"
+                        value="Order Confirm" />
                 </div>
             </form>
         </div>

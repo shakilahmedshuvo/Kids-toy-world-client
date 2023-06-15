@@ -3,19 +3,24 @@ const ClientSays = () => {
     return (
         <div className="max-w-7xl mx-auto">
             <hr className="border-b border-solid border-4 my-20" />
-            <h2 className="text-5xl font-bold text-center text-sky-500">
+            <h2
+                className="text-5xl font-bold text-center text-sky-500">
                 Customer FeedBack
             </h2>
-            <p className="font-bold text-2xl mt-2 text-slate-500 text-center p-6">
+            <p
+                className="font-bold text-2xl mt-2 text-slate-500 text-center p-6">
                 Our Costumer Says
             </p>
             {/* grid section */}
-            <div className="flex flex-col lg:grid-cols-4 w-full lg:flex-row gap-5">
-                <div className="card w-full glass bg-sky-200 hover:bg-sky-300"
+            <div
+                className="flex flex-col lg:grid-cols-4 w-full lg:flex-row gap-5">
+                <div
+                    className="card w-full glass bg-sky-200 hover:bg-sky-300"
                     data-aos="zoom-out-down">
                     <figure>
                         <div className="avatar indicator mt-5">
-                            <span className="indicator-item badge bg-rose-600 border-0">
+                            <span
+                                className="indicator-item badge bg-rose-600 border-0">
                             </span>
                             <div className="h-20 w-full rounded-full">
                                 <img
@@ -25,17 +30,20 @@ const ClientSays = () => {
                         </div>
                     </figure>
                     <div className="card-body">
-                        <div className="flex gap-2 mx-auto text-xl pb-2 text-yellow-600">
-                            <FaStar></FaStar>
-                            <FaStar></FaStar>
-                            <FaStar></FaStar>
-                            <FaStar></FaStar>
-                            <FaStarHalfAlt></FaStarHalfAlt>
+                        <div
+                            className="flex gap-2 mx-auto text-xl pb-2 text-yellow-600">
+                            <FaStar />
+                            <FaStar />
+                            <FaStar />
+                            <FaStar />
+                            <FaStarHalfAlt />
                         </div>
-                        <h2 className="card-title mx-auto font-bold">
+                        <h2
+                            className="card-title mx-auto font-bold">
                             SHAKIL AHMED
                         </h2>
-                        <small className="text-center font-bold text-slate-500">
+                        <small
+                            className="text-center font-bold text-slate-500">
                             Kids Toy World Toys Are
                             <br />
                             Awesome It is recommended,
@@ -47,11 +55,13 @@ const ClientSays = () => {
                         </small>
                     </div>
                 </div>
-                <div className="card w-full glass bg-sky-200 hover:bg-sky-300"
+                <div
+                    className="card w-full glass bg-sky-200 hover:bg-sky-300"
                     data-aos="zoom-out-down">
                     <figure>
                         <div className="avatar indicator mt-5">
-                            <span className="indicator-item badge bg-rose-600 border-0">
+                            <span
+                                className="indicator-item badge bg-rose-600 border-0">
                             </span>
                             <div className="h-20 w-full rounded-full">
                                 <img
@@ -61,17 +71,19 @@ const ClientSays = () => {
                         </div>
                     </figure>
                     <div className="card-body">
-                        <div className="flex gap-2 mx-auto text-xl pb-2 text-yellow-600">
-                            <FaStar></FaStar>
-                            <FaStar></FaStar>
-                            <FaStar></FaStar>
-                            <FaStar></FaStar>
-                            <FaStar></FaStar>
+                        <div
+                            className="flex gap-2 mx-auto text-xl pb-2 text-yellow-600">
+                            <FaStar />
+                            <FaStar />
+                            <FaStar />
+                            <FaStar />
+                            <FaStar />
                         </div>
                         <h2 className="card-title mx-auto font-bold">
                             Likhon Adnan
                         </h2>
-                        <small className="text-center font-bold text-slate-500">
+                        <small
+                            className="text-center font-bold text-slate-500">
                             Kids Toy World Toys Are
                             <br />
                             Awesome It is recommended,
@@ -83,11 +95,13 @@ const ClientSays = () => {
                         </small>
                     </div>
                 </div>
-                <div className="card w-full glass bg-sky-200 hover:bg-sky-300"
+                <div
+                    className="card w-full glass bg-sky-200 hover:bg-sky-300"
                     data-aos="zoom-out-down">
                     <figure>
                         <div className="avatar indicator mt-5">
-                            <span className="indicator-item badge bg-rose-600 border-0">
+                            <span
+                                className="indicator-item badge bg-rose-600 border-0">
                             </span>
                             <div className="h-20 w-full rounded-full">
                                 <img
@@ -97,17 +111,20 @@ const ClientSays = () => {
                         </div>
                     </figure>
                     <div className="card-body">
-                        <div className="flex gap-2 mx-auto text-xl pb-2 text-yellow-600">
-                            <FaStar></FaStar>
-                            <FaStar></FaStar>
-                            <FaStar></FaStar>
-                            <FaStarHalfAlt></FaStarHalfAlt>
-                            <FaStarHalfAlt></FaStarHalfAlt>
+                        <div
+                            className="flex gap-2 mx-auto text-xl pb-2 text-yellow-600">
+                            <FaStar />
+                            <FaStar />
+                            <FaStar />
+                            <FaStarHalfAlt />
+                            <FaStarHalfAlt />
                         </div>
-                        <h2 className="card-title mx-auto font-bold">
+                        <h2
+                            className="card-title mx-auto font-bold">
                             Ahmed Shuvo
                         </h2>
-                        <small className="text-center font-bold text-slate-500">
+                        <small
+                            className="text-center font-bold text-slate-500">
                             Kids Toy World Toys Are
                             <br />
                             Awesome It is recommended,
@@ -119,11 +136,13 @@ const ClientSays = () => {
                         </small>
                     </div>
                 </div>
-                <div className="card w-full glass bg-sky-200 hover:bg-sky-300"
+                <div
+                    className="card w-full glass bg-sky-200 hover:bg-sky-300"
                     data-aos="zoom-out-down">
                     <figure>
                         <div className="avatar indicator mt-5">
-                            <span className="indicator-item badge bg-rose-600 border-0">
+                            <span
+                                className="indicator-item badge bg-rose-600 border-0">
                             </span>
                             <div className="h-20 w-full rounded-full">
                                 <img
@@ -133,17 +152,20 @@ const ClientSays = () => {
                         </div>
                     </figure>
                     <div className="card-body">
-                        <div className="flex gap-2 mx-auto text-xl pb-2 text-yellow-600">
-                            <FaStar></FaStar>
-                            <FaStar></FaStar>
-                            <FaStar></FaStar>
-                            <FaStar></FaStar>
-                            <FaStarHalfAlt></FaStarHalfAlt>
+                        <div
+                            className="flex gap-2 mx-auto text-xl pb-2 text-yellow-600">
+                            <FaStar />
+                            <FaStar />
+                            <FaStar />
+                            <FaStar />
+                            <FaStarHalfAlt />
                         </div>
-                        <h2 className="card-title mx-auto font-bold">
+                        <h2
+                            className="card-title mx-auto font-bold">
                             Abdullah Al Imran
                         </h2>
-                        <small className="text-center font-bold text-slate-500">
+                        <small
+                            className="text-center font-bold text-slate-500">
                             Kids Toy World Toys Are
                             <br />
                             Awesome It is recommended,
